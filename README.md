@@ -12,7 +12,12 @@ eLife, https://doi.org/10.7554/eLife.23496
 Please email Dan at dturnere 'at' ucsc.edu with any questions.
 
 ## Data
-The data is contained in a series of MATLAB files in the _data_ directory. Each .mat file is a single trial, formatted as a MATLAB object with the following fields:
+The data is contained in a series of MATLAB files in the _data_ directory. Each .mat file is a single trial of one of three conditions:
+- **Dark**: The fly was walking in the dark
+- **1x**: The fly was shown a stripe that it had closed loop control over
+- **2x**: The fly was shown a stripe that it had closed loop control over with a 2x gain (e.g. if the fly rotated 15 deg, the stripe rotated 30 deg).
+
+The data is formatted as a MATLAB object with the following fields:
 - **GROIaveMax**: The max intensity projection of the imaging volume over time for the green channel
 - **GROIaveMean**: The mean projection of the imaging volume over time for the green channel
 - **RROIaveMax**: The max intensity projection of the imaging volume over time for the red channel
